@@ -6,26 +6,45 @@
 
 <section class="hero">
     <div class="hero-inner">
-        <div class="hero-badge">Personal Finance Tracker</div>
+        <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Free to use · No credit card needed
+        </div>
         <h1 class="hero-title">
-            Know where your<br>
-            <em>money goes</em>
+            Track every rupee.<br>
+            <span class="hero-title-teal">Know where it goes.</span>
         </h1>
         <p class="hero-subtitle">
-            Log expenses, understand your spending patterns,
-            and take control of your financial life —
-            one transaction at a time.
+            Log your expenses, understand your<br>
+            spending patterns, and take control.
         </p>
         <div class="hero-actions">
-            <a href="{{ url_for('register') }}" class="btn-primary">Start tracking free</a>
-            <a href="{{ url_for('login') }}" class="btn-ghost">Sign in</a>
+            <a href="{{ url_for('register') }}" class="btn-primary btn-primary-black">Get Started</a>
+            <a href="{{ url_for('login') }}" class="btn-primary btn-primary-black">Sign In</a>
         </div>
     </div>
     <div class="hero-visual">
         <div class="mock-card">
             <div class="mock-card-header">
-                <span class="mock-label">March 2026</span>
-                <span class="mock-total">₹12,450</span>
+                <div class="mock-dots">
+                    <span class="mock-dot"></span>
+                    <span class="mock-dot"></span>
+                    <span class="mock-dot"></span>
+                </div>
+            </div>
+            <div class="mock-stats">
+                <div class="mock-stat-card">
+                    <span class="mock-stat-label">This Month</span>
+                    <span class="mock-stat-val">₹12,450</span>
+                </div>
+                <div class="mock-stat-card">
+                    <span class="mock-stat-label">Last Month</span>
+                    <span class="mock-stat-val">₹10,200</span>
+                </div>
+                <div class="mock-stat-card">
+                    <span class="mock-stat-label">Avg Spend</span>
+                    <span class="mock-stat-val">₹4,150</span>
+                </div>
             </div>
             <div class="mock-bars">
                 <div class="mock-bar-row">
